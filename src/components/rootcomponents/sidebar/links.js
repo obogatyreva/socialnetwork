@@ -12,7 +12,7 @@ const SideBar = () => {
           </NavLink>
       </li>
         <li>
-          <NavLink to ='/messages'>
+          <NavLink to ='/Messages'>
           Messages
           </NavLink>
       </li>
