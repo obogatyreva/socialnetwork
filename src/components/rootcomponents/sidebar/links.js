@@ -7,27 +7,27 @@ const SideBar = () => {
     <div className='list-item'>
       <ul>
         <li>
-          <NavLink to ='/Profile'>
+          <NavLink to ='/profile'>
           Profile
           </NavLink>
       </li>
         <li>
-          <NavLink to ='/Messages'>
+          <NavLink to ='/messages'>
           Messages
           </NavLink>
       </li>
         <li>
-          <NavLink to ='/News'>
+          <NavLink to ='/news'>
             News
           </NavLink>
         </li>
         <li>
-          <NavLink to ='/Music'>
+          <NavLink to ='/music'>
           Music
           </NavLink>
         </li>
         <li>
-          <NavLink to ='/Settings'>
+          <NavLink to ='/settings'>
           Settings
           </NavLink>
           </li>
