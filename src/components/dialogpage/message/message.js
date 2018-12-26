@@ -6,8 +6,8 @@ const Message = (props) => {
 
     return (
         <div>
-            <span><img className='avka' src={message.avka} alt='avatar' /></span>
-            <span>{message.name}, {message.text}?</span>
+            <span><img className='avka-message' src={message.avka} alt='avatar' /></span>
+            <span className='message-text'>{message.name}, {message.text}?</span>
         </div>
     );
 }

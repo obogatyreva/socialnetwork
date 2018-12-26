@@ -12,6 +12,19 @@
                 "website": "http://www.shakira.com/",
                 "photo": "https://i.pinimg.com/236x/58/d6/cd/58d6cd60d27862bd6d78757251e34330--music-shakira-expecting-baby.jpg"
             },
+            "posts": [
+            {
+                "message": "Hello!\nHow are you\n?",
+                "avka": "https://igorzuevich.com/wp-content/uploads/2017/12/avatarka-v-telegram.png",
+                "likes": "5"
+            },
+            {
+                "message": "What are you doing?",
+                "avka": "https://igorzuevich.com/wp-content/uploads/2017/12/avatarka-v-telegram.png",
+                "likes": "10"
+            }
+        ],
+
             "dialogs": [
                 {
                     "name": "Andrew",
@@ -27,8 +40,28 @@
                     "name": "Sergey",
                     "text": "hello\nhow are you\n",
                     "avka": "http://www.avatar-mix.ru/avatars_64x64/440.jpg"
+                },
+                {
+                    "name": "Mark",
+                    "text": "hello\nhow are you\n",
+                    "avka": "http://www.avatar-mix.ru/avatars_64x64/440.jpg"
+                },
+                {
+                    "name": "John",
+                    "text": "hello\nhow are you\n",
+                    "avka": "http://www.avatar-mix.ru/avatars_64x64/440.jpg"
+                },
+                {
+                    "name": "Anton",
+                    "text": "hello\nhow are you\n",
+                    "avka": "http://www.avatar-mix.ru/avatars_64x64/440.jpg"
                 }
+
+
             ]
+
+
+
         }
     }
 }

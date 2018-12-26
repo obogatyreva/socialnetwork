@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
+import Login from './login/login';
+import NavLink from 'react-router-dom/NavLink';
 
-import Login from '../login/field_login';
+
 
 const LoginPage = () => {
       return (
         <div>
+          <NavLink to = '/'>
+          </NavLink>
           <Login />
         </div>
       );
