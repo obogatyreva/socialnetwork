@@ -4,6 +4,7 @@ import SideBar from './sidebar/links';
 import ProfilePage from '../profilepage/profilepage';
 import DialogsPage from '../dialogpage/dialogspage';
 
+
 const RootComponent = (props) => {
 
     let config = props.config[0];

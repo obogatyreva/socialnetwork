@@ -19,7 +19,7 @@ html {
   padding: 5px;
 }
 
-.log-btn {
+.log-button {
   border-radius: 3px;
   color: #FFF;
   background-color: #0095ff;
@@ -30,15 +30,14 @@ html {
   text-decoration: none;
 }
 
+/* Sidebar with navElements */
 .content-wrapper {
   display: flex;
-   
 }
 
 .sidebar-block {
   margin: 0 5px 0 0;
   background-color: #00B358;
-  
 }
 
 div.sidebar-block .list-item ul {
@@ -58,7 +57,6 @@ div.sidebar-block .list-item ul {
 .container {
   display: flex;
   flex-wrap: wrap;
-  
 }
 
 .photo {
@@ -70,52 +68,53 @@ div.sidebar-block .list-item ul {
   padding: 0px 0px 0px 20px;
 }
 
- p {
-   margin: 0px 0px;
+p {
+  margin: 0;
+}
 
- }
+/* Posts on the wall. */
+.header-post {
+  padding: 0px 10px;
+}
 
- .posts {
+.posts {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-
-
- }
-
-  .post-field {
-    margin: 10px 10px;
-    height: 70px;
-    width: 963px;
-    background-color:rgb(192, 192, 192);
-
-  }
-
-  .post-image {
-    width: 40px;
-  }
-
-  .submit-btn {
-  align-self: flex-end;
-  background-color: #00B358;
-  color: white;
-  width: 120px;
+}
     
+.post-area {
+  margin: 10px 10px;
+  height: 70px;
+  width: 960px;
+  background-color: #bdbdbd;
 }
 
+.post-image {
+  width: 40px;
+}
 
-/* DialogsGroup */
+.post-message {
+  padding: 0 10px;
+}
+
+.submit-button {
+  margin-right: 10px; 
+  align-self: flex-end;
+  border-radius: 2px;
+  background-color: #0095ff; 
+}
+
+/* Group of people and their messages. */
 .dialogs-wrapper {
   display: flex;
   padding-top: 10px;
-
 }
 
 .group-list {
   border-right: 1px solid grey;
   margin-right: 25px;
   padding-right: 25px;
-
 }
 
 .group-list li {
@@ -155,13 +154,13 @@ div.sidebar-block .list-item ul {
   margin-bottom: 10px;
 }
 
-.login-btn {
+.login-button {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.login-btn .log-btn {
+.login-button .log-button {
   margin: 0;
 }
 

@@ -17,7 +17,7 @@ const App = () => {
       <Route path = '/login'  exact render={() => <Login />} />
       <Route path='/profile' render={() => <RootComponent config={[config, 'profile']} />} />
       <Route path='/messages' render={() => <RootComponent config={[config, 'messages']} />} />
-      {/* <Route path='/profile' render={() => <RootComponent config={[config, 'profile']} />} /> */}
+      {/* <Route path='/login' render={() => <RootComponent config={[config, 'login']} />} /> */}
       {/* <Route path='/profile' render={() => <RootComponent config={[config, 'profile']} />} /> */}
       {/* <Route path='/profile' render={() => <ProfilePage config={[config, 'aaaa']} />} /> */}
       {/* <Route path='/messages' render={() => <DialogsPage config={config} />} /> */}

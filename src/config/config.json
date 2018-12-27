@@ -29,32 +29,38 @@
                 {
                     "name": "Andrew",
                     "text": "hello\nhow are you\n",
-                    "avka": "http://www.avatar-mix.ru/avatars_64x64/440.jpg"
+                    "avka": "http://www.avatar-mix.ru/avatars_64x64/440.jpg",
+                    "enable": false
                 },
                 {
                     "name": "Dmitry",
                     "text": "hello\nhow are you\n",
-                    "avka": "http://www.avatar-mix.ru/avatars_64x64/440.jpg"
+                    "avka": "http://www.avatar-mix.ru/avatars_64x64/440.jpg",
+                    "enable": false
                 },
                 {
                     "name": "Sergey",
                     "text": "hello\nhow are you\n",
-                    "avka": "http://www.avatar-mix.ru/avatars_64x64/440.jpg"
+                    "avka": "http://www.avatar-mix.ru/avatars_64x64/440.jpg",
+                    "enable": false
                 },
                 {
                     "name": "Mark",
-                    "text": "hello\nhow are you\n",
-                    "avka": "http://www.avatar-mix.ru/avatars_64x64/440.jpg"
+                    "text": "hi\nhow are you\n",
+                    "avka": "http://www.avatar-mix.ru/avatars_64x64/440.jpg",
+                    "enable": true
                 },
                 {
                     "name": "John",
-                    "text": "hello\nhow are you\n",
-                    "avka": "http://www.avatar-mix.ru/avatars_64x64/440.jpg"
+                    "text": "hi\nhow are you\n",
+                    "avka": "http://www.avatar-mix.ru/avatars_64x64/440.jpg",
+                    "enable": true
                 },
                 {
                     "name": "Anton",
-                    "text": "hello\nhow are you\n",
-                    "avka": "http://www.avatar-mix.ru/avatars_64x64/440.jpg"
+                    "text": "hi\nhow are you\n",
+                    "avka": "http://www.avatar-mix.ru/avatars_64x64/440.jpg",
+                    "enable": true
                 }
 
 
