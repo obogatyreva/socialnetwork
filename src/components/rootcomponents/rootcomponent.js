@@ -6,7 +6,7 @@ import DialogsPage from '../dialogpage/dialogspage';
 
 
 const RootComponent = (props) => {
-
+console.log(props);
     let config = props.config[0];
     let image = config.data.image;
     let path = props.config[1];

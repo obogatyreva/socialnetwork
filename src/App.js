@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router';
 import RootComponent from './components/rootcomponents/rootcomponent';
-import ProfilePage from './components/profilepage/profilepage';
-import DialogsPage from './components/dialogpage/dialogspage';
-import {NavLink} from 'react-router-dom';
 import Login from './components/authorization/login/login';
 import './App.css';
 

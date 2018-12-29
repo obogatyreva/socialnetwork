@@ -27,36 +27,42 @@
 
             "dialogs": [
                 {
+                    "id": "0",
                     "name": "Andrew",
                     "text": "hello\nhow are you\n",
                     "avka": "http://www.avatar-mix.ru/avatars_64x64/440.jpg",
                     "enable": false
                 },
                 {
+                    "id": "1",
                     "name": "Dmitry",
                     "text": "hello\nhow are you\n",
                     "avka": "http://www.avatar-mix.ru/avatars_64x64/440.jpg",
                     "enable": false
                 },
                 {
+                    "id": "2",
                     "name": "Sergey",
                     "text": "hello\nhow are you\n",
                     "avka": "http://www.avatar-mix.ru/avatars_64x64/440.jpg",
                     "enable": false
                 },
                 {
+                    "id": "3",
                     "name": "Mark",
                     "text": "hi\nhow are you\n",
                     "avka": "http://www.avatar-mix.ru/avatars_64x64/440.jpg",
                     "enable": true
                 },
                 {
+                    "id": "4",
                     "name": "John",
                     "text": "hi\nhow are you\n",
                     "avka": "http://www.avatar-mix.ru/avatars_64x64/440.jpg",
                     "enable": true
                 },
                 {
+                    "id": "5",
                     "name": "Anton",
                     "text": "hi\nhow are you\n",
                     "avka": "http://www.avatar-mix.ru/avatars_64x64/440.jpg",

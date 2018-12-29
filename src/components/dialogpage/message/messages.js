@@ -3,11 +3,10 @@ import Message from './message';
 
 const Messages = (props) => {
 
-    let dialogs = props.config.data.components.dialogs.map((message) => {
-        return <Message message={message} toggleMessage={props.toggleMessage} />;
+    let dialogs = props.config.data.components.dialogs.map((message, id) => {
+        // debugger;
+        return <Message message={message} key ={id} toggleMessage={props.config.toggleMessage} />;
     });
-
-
 
     return (
         <div>
@@ -15,6 +14,5 @@ const Messages = (props) => {
         </div>
     );
 }
-
 
 export default Messages;
