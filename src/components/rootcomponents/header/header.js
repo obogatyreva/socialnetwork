@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import logo from '../../images/ball.png';
 import NavLink from 'react-router-dom/NavLink';
 

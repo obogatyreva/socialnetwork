@@ -1,18 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Message from './message';
 
 const Messages = (props) => {
+  let dialogs = props.store.state.components.dialogs.map((message, index) => {
+    return <Message message={message} key ={index} toggleMessage={props.store.toggleMessage} />;
+  });
 
-    let dialogs = props.config.data.components.dialogs.map((message, id) => {
-        // debugger;
-        return <Message message={message} key ={id} toggleMessage={props.config.toggleMessage} />;
-    });
-
-    return (
-        <div>
-            {dialogs}
-        </div>
-    );
+  return (
+    <div>
+      {dialogs}
+    </div>
+  );
 }
 
 export default Messages;

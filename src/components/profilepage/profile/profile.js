@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 const Profile = (props) => {
-    let config = props.config.data.components.profile;
+    let config = props.store.state.components.profile;
 
     return (
         <div>
@@ -12,7 +12,7 @@ const Profile = (props) => {
                     <p>Date of birth: {config.birthday}</p>
                     <p>City: {config.city}</p>
                     <p>Education: {config.education}</p>
-                    <p><a href='#'>Web-site: {config.website}</a></p>
+                    <p><a href ='foo' >Web-site: {config.website}</a></p>
                 </div>
             </div>
 

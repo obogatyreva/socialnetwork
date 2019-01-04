@@ -13,17 +13,17 @@
                 "photo": "https://i.pinimg.com/236x/58/d6/cd/58d6cd60d27862bd6d78757251e34330--music-shakira-expecting-baby.jpg"
             },
             "posts": [
-            {
-                "message": "Hello!\nHow are you\n?",
-                "avka": "https://igorzuevich.com/wp-content/uploads/2017/12/avatarka-v-telegram.png",
-                "likes": "5"
-            },
-            {
-                "message": "What are you doing?",
-                "avka": "https://igorzuevich.com/wp-content/uploads/2017/12/avatarka-v-telegram.png",
-                "likes": "10"
-            }
-        ],
+                {
+                    "message": "Hello!\nHow are you\n?",
+                    "avka": "https://igorzuevich.com/wp-content/uploads/2017/12/avatarka-v-telegram.png",
+                    "likes": "5"
+                },
+                {
+                    "message": "What are you doing?",
+                    "avka": "https://igorzuevich.com/wp-content/uploads/2017/12/avatarka-v-telegram.png",
+                    "likes": "10"
+                }
+            ],
 
             "dialogs": [
                 {
@@ -31,42 +31,48 @@
                     "name": "Andrew",
                     "text": "hello\nhow are you\n",
                     "avka": "http://www.avatar-mix.ru/avatars_64x64/440.jpg",
-                    "enable": false
+                    "enable": false,
+                    "currentUserId": 1
                 },
                 {
                     "id": "1",
                     "name": "Dmitry",
                     "text": "hello\nhow are you\n",
                     "avka": "http://www.avatar-mix.ru/avatars_64x64/440.jpg",
-                    "enable": false
+                    "enable": false,
+                    "currentUserId": 2
                 },
                 {
                     "id": "2",
                     "name": "Sergey",
                     "text": "hello\nhow are you\n",
                     "avka": "http://www.avatar-mix.ru/avatars_64x64/440.jpg",
-                    "enable": false
+                    "enable": false,
+                    "currentUserId": 3
                 },
                 {
                     "id": "3",
                     "name": "Mark",
                     "text": "hi\nhow are you\n",
                     "avka": "http://www.avatar-mix.ru/avatars_64x64/440.jpg",
-                    "enable": true
+                    "enable": true,
+                    "currentUserId": 4
                 },
                 {
                     "id": "4",
                     "name": "John",
                     "text": "hi\nhow are you\n",
                     "avka": "http://www.avatar-mix.ru/avatars_64x64/440.jpg",
-                    "enable": true
+                    "enable": true,
+                    "currentUserId": 5
                 },
                 {
                     "id": "5",
                     "name": "Anton",
                     "text": "hi\nhow are you\n",
                     "avka": "http://www.avatar-mix.ru/avatars_64x64/440.jpg",
-                    "enable": true
+                    "enable": true,
+                    "currentUserId": 6
                 }
 
 

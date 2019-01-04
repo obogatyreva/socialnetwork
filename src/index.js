@@ -4,29 +4,35 @@ import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import config from './config/config.json';
 
+import store from './config/store';
 
 let toggleMessage = (message) => {
-    message.enable = !message.enable;
-    renderAllPage();
+  message.enable = !message.enable;
+  renderAllPage();
 }
 
-config.toggleMessage = toggleMessage;
+store.toggleMessage = toggleMessage;
+
+let addMessage = (post) => {
+  if (post.avka === '') {
+    post.avka = 'https://igorzuevich.com/wp-content/uploads/2017/12/avatarka-v-telegram.png';
+  }
+  // Add new post to existence.
+  store.state.components.posts = [post, ...store.state.components.posts];
+  renderAllPage();
+}
+store.addMessage = addMessage;
 
 let renderAllPage = () => {
-
-    ReactDOM.render(
-        <BrowserRouter>
-            <App config={config} />
-        </BrowserRouter>, document.getElementById('root'));
+  ReactDOM.render(
+    <BrowserRouter>
+      <div>
+        <App store ={store}/>
+      </div>
+    </BrowserRouter>, document.getElementById('root'));
 }
 
 renderAllPage();
 
-
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
 serviceWorker.unregister();

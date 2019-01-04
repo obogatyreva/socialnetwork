@@ -1,6 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
 import NavLink from 'react-router-dom/NavLink';
-
 
 const SideBar = () => {
   return (
@@ -23,8 +22,8 @@ const SideBar = () => {
           </NavLink>
           </li>
           <li>
-            <NavLink to='/music'>
-              Music
+            <NavLink to='/photos'>
+              Photos
           </NavLink>
           </li>
           <li>
@@ -35,7 +34,6 @@ const SideBar = () => {
         </ul>
       </nav>
     </div>
-
   );
 }
 

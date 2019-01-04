@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 const Login = () => {
   return (
@@ -10,8 +10,7 @@ const Login = () => {
         </div>
         <div className='login-button'>
           <div>
-            <label for='item'>keep me logged in</label>
-            <input id='item' type='checkbox' checked />
+            <input type = 'checkbox' /><label>keep me logged in</label>
           </div>
           <button className='log-button'>Log in</button>
         </div>

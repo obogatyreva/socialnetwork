@@ -1,22 +1,19 @@
-import React, { Component } from 'react';
-
+import React from 'react';
 
 const Message = (props) => {
     let message = props.message;
     let toggleMessage = props.toggleMessage;
-
-    let onAvkaClick = (e) => {
+    let onImageClick = (e) => {
         toggleMessage(message);
     }
-
-    let spanElement = message.enable ? <span className='message-text'>{message.id} - {message.text}</span> : null;
+    let spanElement = message.enable ? <span className='message-text'>{message.text}</span> : null;
     return (
-        <div>
-            <span>
-                <img className='avka-message' src={message.avka} onClick={onAvkaClick} alt='avatar' />
-            </span>
-            {spanElement}
-        </div>
+      <div>
+        <span>
+            <img className='avka-message' src={message.avka} onClick={onImageClick} alt='avatar' />
+        </span>
+          {spanElement}
+      </div>
     );
 }
 

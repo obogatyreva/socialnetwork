@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Messages from './message/messages';
 import DialogsGroup from './dialogsGroup';
 
 const DialogsPage = (props) => {
-  let config = props.config;
+  let store = props.store;
   return (
     <div>
       <div className='dialogs-wrapper'>
-        <DialogsGroup config={config} />
-        <Messages config={config} />
+        <DialogsGroup store={store} />
+        <Messages store={store} />
       </div>
     </div>
   );

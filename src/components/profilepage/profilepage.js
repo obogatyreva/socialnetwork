@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Profile from '../profilepage/profile/profile';
 import Posts from './profile/notes/posts';
 
 const ProfilePage = (props) => {
-  let config = props.config;
+  let store = props.store;
 
   return (
     <div>
-      <Profile config={config} />
-      <Posts config={config} />
+      <Profile store={store} />
+      <Posts store={store} />
     </div>
   );
 }

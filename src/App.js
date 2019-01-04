@@ -1,27 +1,21 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Route } from 'react-router';
 import RootComponent from './components/rootcomponents/rootcomponent';
 import Login from './components/authorization/login/login';
 import './App.css';
 
 // Load the config file.
-import config from './config/config.json';
+import store from './config/store'
 
-
-const App = () => {
+const App = (props) => {
   return (
     <div>
       <Route path = '/login'  exact render={() => <Login />} />
-      <Route path='/profile' render={() => <RootComponent config={[config, 'profile']} />} />
-      <Route path='/messages' render={() => <RootComponent config={[config, 'messages']} />} />
-      {/* <Route path='/login' render={() => <RootComponent config={[config, 'login']} />} /> */}
-      {/* <Route path='/profile' render={() => <RootComponent config={[config, 'profile']} />} /> */}
-      {/* <Route path='/profile' render={() => <ProfilePage config={[config, 'aaaa']} />} /> */}
-      {/* <Route path='/messages' render={() => <DialogsPage config={config} />} /> */}
+      <Route path='/profile' render={() => <RootComponent store={store} path={'profile'} />} />
+      <Route path='/messages' render={() => <RootComponent store={store} path={'messages'} />} />
+
 
     </div>
-
-
   );
 }
 

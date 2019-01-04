@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Header from './header/header';
 import SideBar from './sidebar/links';
 import ProfilePage from '../profilepage/profilepage';
@@ -6,33 +6,35 @@ import DialogsPage from '../dialogpage/dialogspage';
 
 
 const RootComponent = (props) => {
-console.log(props);
-    let config = props.config[0];
-    let image = config.data.image;
-    let path = props.config[1];
+  let store = props.store;
+  let image = store.state.image;
+  let path = props.path;
 
-    return (
-        <div>
-            <Header />
-            <div className='content-wrapper'>
-                <div className='sidebar-block'>
-                    <SideBar />
-                </div>
-                <div className='content-block'>
-                    <img className='main-photo' src={image.src} alt='photo' />
-                    {(() => {
-                        switch (path) {
-                            case 'profile':
-                                return <ProfilePage config={config} />
-
-                            case 'messages':
-                                return <DialogsPage config={config} />
-                        }
-                    })()}
-                </div>
-            </div>
+  return (
+    <div>
+      <Header />
+      <div className='content-wrapper'>
+        <div className='sidebar-block'>
+          <SideBar />
         </div>
-    );
+        <div className='content-block'>
+          <img className='main-photo' src={image.src} alt = 'nature'/>
+          {(() => {
+            switch (path) {
+              case 'profile':
+                return <ProfilePage store={store} />
+
+              case 'messages':
+                return <DialogsPage store={store} />
+
+              default:
+                // do nothing;
+            }
+          })()}
+        </div>
+      </div>
+    </div>
+  );
 }
 
 
