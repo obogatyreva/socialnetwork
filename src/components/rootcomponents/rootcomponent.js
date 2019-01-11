@@ -3,7 +3,7 @@ import Header from './header/header';
 import SideBar from './sidebar/links';
 import ProfilePage from '../profilepage/profilepage';
 import DialogsPage from '../dialogpage/dialogspage';
-
+import Photos from '../PhotosPage/PhotosPage';
 
 const RootComponent = (props) => {
   let store = props.store;
@@ -27,8 +27,11 @@ const RootComponent = (props) => {
               case 'messages':
                 return <DialogsPage store={store} />
 
+              case 'photos':
+                return <Photos store={store} imagesUrls={store.state.components.photos} />
+
               default:
-                // do nothing;
+              // do nothing;
             }
           })()}
         </div>
@@ -36,8 +39,6 @@ const RootComponent = (props) => {
     </div>
   );
 }
-
-
 
 export default RootComponent;
 

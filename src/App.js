@@ -9,13 +9,13 @@ import store from './config/store'
 
 const App = (props) => {
   return (
-    <div>
+    <>
       <Route path = '/login'  exact render={() => <Login />} />
       <Route path='/profile' render={() => <RootComponent store={store} path={'profile'} />} />
       <Route path='/messages' render={() => <RootComponent store={store} path={'messages'} />} />
+      <Route path='/photos' render={() => <RootComponent store={store} path={'photos'} /> } />
 
-
-    </div>
+    </>
   );
 }
 

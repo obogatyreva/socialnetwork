@@ -12,6 +12,14 @@ let store = {
         website: "http://www.shakira.com/",
         photo: "https://i.pinimg.com/236x/58/d6/cd/58d6cd60d27862bd6d78757251e34330--music-shakira-expecting-baby.jpg"
       },
+      photos: [
+        {
+          picture: "http://danceacademyru.ru/upload/news/33/gallery/medium/2017-02-11-10-51-25_MG_4263.jpg",
+        },
+        {
+          picture: "http://hramvluchnikah.ru/wp-content/uploads/2017/11/Foto009_tn-1-480x250.jpg",
+        }
+      ],
       posts: [
         {
           message: "Hello!\nHow are you\n?",

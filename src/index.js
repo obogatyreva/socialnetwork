@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
+import {BrowserRouter} from 'react-router-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
@@ -24,6 +24,12 @@ let addMessage = (post) => {
 }
 store.addMessage = addMessage;
 
+let addPhoto = (url) => {
+  store.state.components.photos.push({picture: url});
+  renderAllPage();
+}
+store.addPhoto = addPhoto;
+
 let renderAllPage = () => {
   ReactDOM.render(
     <BrowserRouter>
@@ -32,7 +38,6 @@ let renderAllPage = () => {
       </div>
     </BrowserRouter>, document.getElementById('root'));
 }
-
 renderAllPage();
 
 serviceWorker.unregister();

@@ -167,3 +167,10 @@ p {
 .user-item {
   color: yellow;
 }
+
+.picture-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  margin-bottom: 10px;
+ }
