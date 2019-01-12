@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Photos = (props) => {
-  let addPhoto = props.store.addPhoto;
   let refUrl = React.createRef();
   let images = null;
   if (!!props.imagesUrls) {
@@ -14,7 +13,7 @@ const Photos = (props) => {
         {images}
       </div>
       <input type='text' ref = {refUrl} />
-      <button onClick = {() => {addPhoto(refUrl.current.value)}}>
+      <button onClick = {() => {props.store.dispatch({type: 'ADD-PHOTO', url: refUrl.current.value})}}>
         Add photo
       </button>
     </div>

@@ -4,37 +4,17 @@ import {BrowserRouter} from 'react-router-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-
 import store from './config/store';
 
-let toggleMessage = (message) => {
-  message.enable = !message.enable;
+store.subscribe =(() => {
   renderAllPage();
-}
-
-store.toggleMessage = toggleMessage;
-
-let addMessage = (post) => {
-  if (post.avka === '') {
-    post.avka = 'https://igorzuevich.com/wp-content/uploads/2017/12/avatarka-v-telegram.png';
-  }
-  // Add new post to existence.
-  store.state.components.posts = [post, ...store.state.components.posts];
-  renderAllPage();
-}
-store.addMessage = addMessage;
-
-let addPhoto = (url) => {
-  store.state.components.photos.push({picture: url});
-  renderAllPage();
-}
-store.addPhoto = addPhoto;
+});
 
 let renderAllPage = () => {
   ReactDOM.render(
     <BrowserRouter>
       <div>
-        <App store ={store}/>
+        <App store={store}/>
       </div>
     </BrowserRouter>, document.getElementById('root'));
 }

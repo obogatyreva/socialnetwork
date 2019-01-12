@@ -2,10 +2,10 @@ import React from 'react';
 import Post from './post';
 
 const Posts = (props) => {
-  let posts = props.store.state.components.posts.map((elem, index) => {
+  let state = props.store.getState();
+  let posts = state.components.posts.map((elem, index) => {
     return <Post note={elem} key={index} />;
   });
-
   let textareaInput = React.createRef();
 
   let addMessageButtonClick = (e) => {
@@ -14,10 +14,10 @@ const Posts = (props) => {
       avka: '',
       likes: '0'
     };
-    props.store.addMessage(post);
+
+    props.store.dispatch({type: 'ADD-MESSAGE', post: post});
     textareaInput.current.value = '';
   }
-
   return (
     <div className='posts'>
       <h3 className='header-post'>My posts</h3>

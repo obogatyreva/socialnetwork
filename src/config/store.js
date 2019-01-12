@@ -1,5 +1,5 @@
 let store = {
-  state: {
+  _state: {
     image: {
       src: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Swansea_Wikivoyage_banner_2.jpg/1400px-Swansea_Wikivoyage_banner_2.jpg"
     },
@@ -76,6 +76,26 @@ let store = {
 
         }
       ],
+    }
+  },
+  getState() {
+    return this._state;
+  },
+  dispatch(action) {
+    if(action.type === 'TOGGLE-MESSAGE') {
+      action.message.enable = !action.message.enable;
+      this.subscribe();
+    } else if (action.type === 'ADD-MESSAGE') {
+      if (action.post.avka === '') {
+        action.post.avka = 'https://igorzuevich.com/wp-content/uploads/2017/12/avatarka-v-telegram.png';
+      }
+      // Add new post to existence.
+      this._state.components.posts = [action.post, ...this._state.components.posts];
+      this.subscribe();
+    } else if (action.type === 'ADD-PHOTO') {
+      this._state.components.photos.push({picture: action.url});
+      console.log(this._state.components.photos);
+      this.subscribe();
     }
   }
 }

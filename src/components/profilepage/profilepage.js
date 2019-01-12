@@ -4,7 +4,6 @@ import Posts from './profile/notes/posts';
 
 const ProfilePage = (props) => {
   let store = props.store;
-
   return (
     <div>
       <Profile store={store} />

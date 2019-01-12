@@ -7,7 +7,7 @@ import Photos from '../PhotosPage/PhotosPage';
 
 const RootComponent = (props) => {
   let store = props.store;
-  let image = store.state.image;
+  let image = store.getState().image;
   let path = props.path;
 
   return (
@@ -22,14 +22,13 @@ const RootComponent = (props) => {
           {(() => {
             switch (path) {
               case 'profile':
-                return <ProfilePage store={store} />
+                return <ProfilePage store={store}/>
 
               case 'messages':
-                return <DialogsPage store={store} />
+                return <DialogsPage store={store}/>
 
               case 'photos':
-                return <Photos store={store} imagesUrls={store.state.components.photos} />
-
+                return <Photos store={store} imagesUrls={store.getState().components.photos} />
               default:
               // do nothing;
             }

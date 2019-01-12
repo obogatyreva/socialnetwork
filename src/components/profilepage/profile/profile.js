@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Profile = (props) => {
-    let config = props.store.state.components.profile;
+    let config = props.store.getState().components.profile;
 
     return (
         <div>
@@ -18,7 +18,6 @@ const Profile = (props) => {
 
         </div>
     );
-
 }
 
 export default Profile;

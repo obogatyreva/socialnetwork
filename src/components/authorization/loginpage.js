@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Login from './login/login';
 
 const LoginPage = () => {
@@ -8,5 +8,4 @@ const LoginPage = () => {
     </div>
   );
 }
-
 export default LoginPage;

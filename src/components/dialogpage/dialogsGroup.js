@@ -15,7 +15,8 @@ class DialogsGroup extends React.Component {
   }
 
   render () {
-    let users = this.props.store.state.components.dialogs;
+    let state = this.props.store.getState();
+    let users = state.components.dialogs;
     let userGroup = users.map((user, index) => {
       // let isUserSelected = currentUserId === user.id;
       // let colorOfUser = isUserSelected ? 'user-item' : '';

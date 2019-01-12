@@ -4,18 +4,15 @@ import RootComponent from './components/rootcomponents/rootcomponent';
 import Login from './components/authorization/login/login';
 import './App.css';
 
-// Load the config file.
-import store from './config/store'
-
 const App = (props) => {
+  let store = props.store;
   return (
-    <>
+    <React.Fragment>
       <Route path = '/login'  exact render={() => <Login />} />
       <Route path='/profile' render={() => <RootComponent store={store} path={'profile'} />} />
       <Route path='/messages' render={() => <RootComponent store={store} path={'messages'} />} />
       <Route path='/photos' render={() => <RootComponent store={store} path={'photos'} /> } />
-
-    </>
+    </React.Fragment>
   );
 }
 
