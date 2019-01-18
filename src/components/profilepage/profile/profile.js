@@ -1,13 +1,14 @@
 import React from 'react';
+import s from './profile.module.css';
 
 const Profile = (props) => {
     let config = props.store.getState().components.profile;
 
     return (
         <div>
-            <div className='container'>
-                <img className='photo' src={config.photo} alt='actress' />
-                <div className='info'>
+            <div className={s.container}>
+                <img className={s.photo} src={config.photo} alt='actress' />
+                <div className={s.info}>
                     <h3>{config.name}</h3>
                     <p>Date of birth: {config.birthday}</p>
                     <p>City: {config.city}</p>

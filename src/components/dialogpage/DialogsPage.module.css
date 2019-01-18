@@ -1,0 +1,14 @@
+.dialogs_wrapper {
+  display: flex;
+  padding-top: 10px;
+}
+
+.group_list {
+  border-right: 1px solid grey;
+  margin-right: 25px;
+  padding-right: 25px;
+}
+
+.group_list li {
+  margin: 25px;
+}

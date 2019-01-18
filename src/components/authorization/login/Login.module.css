@@ -1,0 +1,36 @@
+.login_wrapper {
+  display: flex;
+  width: 220px;
+  background: #ececec75;
+  margin-left: 40%;
+  padding: 20px;
+  flex-direction: column;
+  border-radius: 10px;
+  border: 1px solid #bdbdbd;
+  box-shadow: 0 0 15px rgba(134, 134, 134, 0.39);
+}
+
+.loginBlock {
+  display: flex;
+  flex-direction: column;
+}
+
+.loginBlock input {
+  font-size: 14px;
+  font-family: Atlas Grotesk Web, Open Sans, sans-serif;
+  font-weight: 400;
+  border-radius: 0;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.loginButton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.loginButton .logButton {
+  margin: 0;
+}
+

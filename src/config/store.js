@@ -14,19 +14,23 @@ let store = {
       },
       photos: [
         {
+          id: 1,
           picture: "http://danceacademyru.ru/upload/news/33/gallery/medium/2017-02-11-10-51-25_MG_4263.jpg",
         },
         {
+          id: 2,
           picture: "http://hramvluchnikah.ru/wp-content/uploads/2017/11/Foto009_tn-1-480x250.jpg",
         }
       ],
       posts: [
         {
+          id: 1,
           message: "Hello!\nHow are you\n?",
           avka: "https://igorzuevich.com/wp-content/uploads/2017/12/avatarka-v-telegram.png",
           likes: "5"
         },
         {
+          id: 2,
           message: "What are you doing?",
           avka: "https://igorzuevich.com/wp-content/uploads/2017/12/avatarka-v-telegram.png",
           likes: "10"
@@ -34,44 +38,34 @@ let store = {
       ],
       dialogs: [
         {
-          name: "Andrew",
-          text: "hello\nhow are you\n",
-          avka: "http://www.avatar-mix.ru/avatars_64x64/440.jpg",
-          enable: false,
-
-        },
-        {
-          name: "Dmitry",
-          text: "hello\nhow are you\n",
-          avka: "http://www.avatar-mix.ru/avatars_64x64/440.jpg",
-          enable: false,
-
-        },
-        {
+          id: 1,
           name: "Sergey",
           text: "hello\nhow are you\n",
-          avka:"http://www.avatar-mix.ru/avatars_64x64/440.jpg",
+          avka:"http://www.skolabubanj.edu.rs/images/zaposleni/default_musko.jpg",
           enable: false,
 
         },
         {
+          id: 2,
           name: "Mark",
           text: "hi\nhow are you\n",
-          avka: "http://www.avatar-mix.ru/avatars_64x64/440.jpg",
+          avka: "http://www.pkolymp.com/wp-content/uploads/2015/04/blank-avatar.jpg",
           enable: true,
 
         },
         {
+          id: 3,
           name: "John",
           text: "hi\nhow are you\n",
-          avka: "http://www.avatar-mix.ru/avatars_64x64/440.jpg",
+          avka: "https://tv.drsha.com/images/blank-avatar.jpg",
           enable: true,
 
         },
         {
-          name: "Anton",
+          id: 4,
+          name: "Marie",
           text: "hi\nhow are you\n",
-          avka: "http://www.avatar-mix.ru/avatars_64x64/440.jpg",
+          avka: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpH5Rex9dqd5dvTmKJjvcgiNme7SaA8IS37dUgwlmYmmoGo9_kYg",
           enable: true,
 
         }
@@ -94,7 +88,6 @@ let store = {
       this.subscribe();
     } else if (action.type === 'ADD-PHOTO') {
       this._state.components.photos.push({picture: action.url});
-      console.log(this._state.components.photos);
       this.subscribe();
     }
   }

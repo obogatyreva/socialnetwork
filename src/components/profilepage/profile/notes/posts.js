@@ -1,10 +1,11 @@
 import React from 'react';
 import Post from './post';
+import s from './Post.module.css';
 
 const Posts = (props) => {
   let state = props.store.getState();
-  let posts = state.components.posts.map((elem, index) => {
-    return <Post note={elem} key={index} />;
+  let posts = state.components.posts.map((item, index) => {
+    return <Post note={item} key={index} />;
   });
   let textareaInput = React.createRef();
 
@@ -19,13 +20,13 @@ const Posts = (props) => {
     textareaInput.current.value = '';
   }
   return (
-    <div className='posts'>
-      <h3 className='header-post'>My posts</h3>
-      <p><textarea ref={textareaInput} className='post-area' name='text' rows='40' cols='20' placeholder='What is new...'></textarea></p>
-      <button className='submit-button' onClick = {addMessageButtonClick}>
+    <div className={s.posts}>
+      <h3 className={s.header_post}>My posts</h3>
+      <p><textarea ref={textareaInput} className={s.post_area} name='text' rows='40' cols='20' placeholder='What is new...'></textarea></p>
+      <button className={s.submit_button} onClick = {addMessageButtonClick}>
         Submit
       </button>
-      <div className='post-message'>
+      <div className={s.post_message}>
         {posts}
       </div>
     </div >

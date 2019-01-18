@@ -3,8 +3,8 @@ import Message from './message';
 
 const Messages = (props) => {
   let state = props.store.getState();
-  let dialogs = state.components.dialogs.map((message, index) => {
-    return <Message message={message} key ={index} store={props.store}/>;
+  let dialogs = state.components.dialogs.map((message) => {
+    return <Message message={message} key ={message.id} store={props.store}/>;
   });
 
   return (

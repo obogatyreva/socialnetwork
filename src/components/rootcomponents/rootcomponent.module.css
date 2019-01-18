@@ -1,0 +1,12 @@
+.sidebar_block {
+  margin: 0 5px 0 0;
+  background-color: #00B358;
+}
+
+.content_wrapper {
+  display: flex;
+}
+
+.main_photo {
+  width: 100%;
+}

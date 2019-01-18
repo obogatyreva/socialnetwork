@@ -1,0 +1,35 @@
+.header_post {
+  padding: 0px 10px;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.post_area {
+  height: 70px;
+  width: 100%;
+  background-color: #bdbdbd;
+  resize: none;
+}
+
+.post_image {
+  width: 40px;
+}
+
+.post_message {
+  padding: 0 10px;
+}
+
+.submit_button {
+  margin-right: -5px;
+  align-self: flex-end;
+  border-radius: 2px;
+  background-color: #0095ff;
+}
+
+p {
+  margin: 0;
+}

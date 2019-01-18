@@ -1,9 +1,11 @@
 import React from 'react';
 import NavLink from 'react-router-dom/NavLink';
+import s from './Sidebar.module.css';
 
 const SideBar = () => {
   return (
-    <div className='list-item'>
+    /*<div className={`${s.div}${s.sidebar_block} ${s.list_item} ${s.ul}`}>*/
+    <div className = {s.list_item}>
       <nav>
         <ul>
           <li>

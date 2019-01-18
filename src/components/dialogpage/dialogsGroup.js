@@ -1,38 +1,16 @@
 import React from 'react';
+import DialogsItem from './DialogsItem';
 
-class DialogsGroup extends React.Component {
-  constructor (props) {
-    super(props);
-    this.props = props;
-    this.state = {isToggleOn:true}
-    this.handleClickOnUser = this.handleClickOnUser.bind(this);
-  }
-
-  handleClickOnUser (e) {
-    this.setState(state => ({
-      isToggleOn: !state.isToggleOn
-    }));
-  }
-
-  render () {
-    let state = this.props.store.getState();
-    let users = state.components.dialogs;
-    let userGroup = users.map((user, index) => {
-      // let isUserSelected = currentUserId === user.id;
-      // let colorOfUser = isUserSelected ? 'user-item' : '';
-
-      return <li key={index} onClick={ this.handleClickOnUser }> {user.name} {this.state.isToggleOn ? 'ON' : 'OFF'}</li>;
+const DialogsGroup =(props) => {
+  let state = props.store.getState();
+  let people = state.components.dialogs.map((item, index)=> {
+    return <DialogsItem item={item} key={index} store={props.store}/>
   });
-
-    return (
-      <div className = 'group-list'>
-        <ul>
-          {userGroup}
-        </ul>
-      </div>
-    )
-  }
-
+  return (
+    <div>
+      {people}
+    </div>
+  )
 }
 
 export default DialogsGroup;

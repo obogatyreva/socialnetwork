@@ -1,17 +1,16 @@
 import React from 'react';
+import s from './Messages.module.css';
 
 const Message = (props) => {
   let message = props.message;
   let onImageClick = (e) => {
-    // debugger;
     props.store.dispatch({type: 'TOGGLE-MESSAGE', message: message});
-    // console.log(message);
   }
-  let spanElement = message.enable ? <span className='message-text'>{message.text}</span> : null;
+  let spanElement = message.enable ? <span className={s.message_text}>{message.text}</span> : null;
   return (
     <div>
         <span>
-            <img className='avka-message' src={message.avka} onClick={onImageClick} alt='avatar' />
+            <img className={s.avka_message} src={message.avka} onClick={onImageClick} alt='avatar' />
         </span>
       {spanElement}
     </div>

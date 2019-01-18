@@ -4,6 +4,7 @@ import SideBar from './sidebar/links';
 import ProfilePage from '../profilepage/profilepage';
 import DialogsPage from '../dialogpage/dialogspage';
 import Photos from '../PhotosPage/PhotosPage';
+import s from './rootcomponent.module.css';
 
 const RootComponent = (props) => {
   let store = props.store;
@@ -13,12 +14,12 @@ const RootComponent = (props) => {
   return (
     <div>
       <Header />
-      <div className='content-wrapper'>
-        <div className='sidebar-block'>
+      <div className={s.content_wrapper}>
+        <div className={s.sidebar_block}>
           <SideBar />
         </div>
-        <div className='content-block'>
-          <img className='main-photo' src={image.src} alt = 'nature'/>
+        <div>
+        <img className={s.main_photo} src={image.src} alt = 'nature'/>
           {(() => {
             switch (path) {
               case 'profile':
