@@ -1,6 +1,14 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# SocialNetwork
+This project is a demo version of social network. Project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). 
 
-## Available Scripts
+Project contains:
+- Personal profile page of user
+- Login/registration feature
+- Photo page where user can post his images
+- Dialog page to maintain conversations between users
+- News page to read the latest news from the contact list
+
+## Available commands
 
 In the project directory, you can run:
 
